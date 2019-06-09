@@ -78,8 +78,8 @@ class deskripsi extends StatelessWidget {
       ),
     
      body: SingleChildScrollView(
-        
-          child: Column(
+       child: Container(
+        child: Column(
 
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -100,12 +100,50 @@ class deskripsi extends StatelessWidget {
          
           },
          child: Text('HOME'),
+      
+
+  
        ),
+       Row(children: <Widget>[
+         Text(
+           'Senin, 10/06/2019',
+                style: TextStyle(fontSize: 27,color: Colors.black),
+           
+         ),
+        Text(
+           'Jakarta',
+                style: TextStyle(fontSize: 27,color: Colors.black),
+           
+         ),
+       ],),
+       Column(children: <Widget>[
+              Text(
+           'Senin, 10/06/2019',
+                style: TextStyle(fontSize: 27,color: Colors.black),
+           
+         ),
+        Text(
+           'Jakarta',
+                style: TextStyle(fontSize: 27,color: Colors.black),
+           
+         ),
+       ],)
+      
            
             ],
-          ),
+          ), 
+        
+
+       )
+   
+        
+      
+       
+
+          
       
       ),
+      
   
   );
 }
